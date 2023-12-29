@@ -3,7 +3,9 @@
 import { UserGroupIcon, HomeIcon, DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import React from "react";
 import clsx from "clsx";
+
 
 const links = [
   { name: "Home", href: "/dashboard", icon: HomeIcon },
