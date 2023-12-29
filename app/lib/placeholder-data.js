@@ -1,4 +1,4 @@
-export const users = [
+const users = [
   {
     id: "410544b2-4001-4271-9855-fec4b6a6442a",
     name: "User",
@@ -7,7 +7,7 @@ export const users = [
   },
 ];
 
-export const customers = [
+const customers = [
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a6442a",
     name: "Delba de Oliveira",
@@ -70,7 +70,7 @@ export const customers = [
   },
 ];
 
-export const invoices = [
+const invoices = [
   {
     customer_id: customers[0].id,
     amount: 15795,
@@ -163,7 +163,7 @@ export const invoices = [
   },
 ];
 
-export const revenue = [
+const revenue = [
   { month: "Jan", revenue: 2000 },
   { month: "Feb", revenue: 1800 },
   { month: "Mar", revenue: 2200 },
@@ -177,3 +177,10 @@ export const revenue = [
   { month: "Nov", revenue: 3000 },
   { month: "Dec", revenue: 4800 },
 ];
+
+module.exports = {
+  customers,
+  invoices,
+  revenue,
+  users,
+};
